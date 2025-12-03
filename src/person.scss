@@ -1,0 +1,75 @@
+// .person {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 200px;
+//   height: 200px;
+// }
+.person {
+  position: relative;
+  transition: 1s;
+
+  &__rank {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 94px;
+    right: 10px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    font-weight: 700;
+    line-height: 100%;
+    color: #8B0000;
+  }
+}
+
+.photo {
+  width: 200px;
+  height: 231px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__circle {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+  }
+
+}
+
+.photo:hover {
+  border-radius: 15px;
+  transform: scale(1.05);
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  opacity: 1;
+}
+
+.extra {
+  opacity: 0;
+}
+
+.person:hover {
+  width: 220px;
+  height: 287px;
+  background-color: #EEEEEE;
+}
+
